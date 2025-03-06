@@ -1,0 +1,6 @@
+- name: ansibleyou
+  hosts: server
+  tasks:
+  - name: echo
+    ansible.builtin.debug:
+      msg: "this is a example for ansible"

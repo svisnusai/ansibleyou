@@ -1,6 +1,7 @@
 - name: expense project
   hosts: local
   connection: yes
+  become: yes
   vars: 
     name: nexus
     - mysql

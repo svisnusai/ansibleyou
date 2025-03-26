@@ -1,6 +1,6 @@
 - name: expense
   hosts: local
-  connection: yes
+  connection: local
   become: yes
   vars: 
     name: nexus

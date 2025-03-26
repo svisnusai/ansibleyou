@@ -27,5 +27,3 @@
   - name: display vars
     ansible.builin.debug:
       msg: "display name is {{nexus}}"
-  
-    

@@ -12,7 +12,8 @@
       name:
          - boto3
          - botocore
-    executable: pip3.9 
+      executable: pip3.9
+
   - name: create ec2 instance
     amazon.aws.ec2_instance:
       name: "{{item}}" 
@@ -23,6 +24,7 @@
       wait: true
     Loop: "{{nexus}}"
     register: benos
+    
   - name: display vars
     ansible.builin.debug:
       msg: "display name is {{nexus}}"
